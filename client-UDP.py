@@ -3,7 +3,7 @@ import socket
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-server_address = ('10.223.75.168', 9000) 
+server_address = ('10.223.75.168', 20000) 
 
 try:
     message = 'Hello World'
