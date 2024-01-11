@@ -6,7 +6,7 @@ server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Set IP address and port
 host = '0.0.0.0'  # Listen on all available interfaces
-port = 200000
+port = 9000
 
 # Bind to the port
 server_socket.bind((host, port))

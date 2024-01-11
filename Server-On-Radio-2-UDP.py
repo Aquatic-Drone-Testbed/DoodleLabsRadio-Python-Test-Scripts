@@ -5,13 +5,14 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # get local machine name
 host = socket.gethostname()
-print(host)
+print(f"I am {host}")
 
+port = 9000
 
-server_address = ('', 20000)
+server_address = ('', port)
 sock.bind(server_address)
 
-print("Listening for messages on port 20000...")
+print(f"Listening for messages from 'radio-1' on {port}...")
 
 while True:
     data, address = sock.recvfrom(4096)

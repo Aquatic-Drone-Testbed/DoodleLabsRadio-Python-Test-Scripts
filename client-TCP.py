@@ -8,7 +8,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = socket.gethostname()
 
 # Port for your service
-port = 20000
+port = 9000
 
 # Connection to hostname on the port
 client_socket.connect((host, port))
